@@ -36,9 +36,11 @@ function GameManager:ProcessGames()
 		lastProcessed = lastProcessed + 1
 	end
 
-	print(lastProcessed)
-
 	local game = self.games[lastProcessed]
+
+	if not game then
+		return
+	end
 
 	if(game:GetStage() == Stage.COMPLETE)then
 		table.RemoveByValue( self.games, item )

@@ -1,35 +1,34 @@
 include("shared.lua")
 include("player.lua")
-include("money.lua")
 include("dice.lua")
 include("team.lua")
-include("spawn.lua")
 include("community.lua")
 include("chance.lua")
-include("turn.lua")
 
+include("sv_currentplayer.lua")
 include("sv_stage.lua")
 include("sv_activegame.lua")
 include("sv_gamemanager.lua")
 
+include("sv_tests.lua")
+
 include("sh_boards.lua")
 include("sh_board_gb.lua")
 
+include("spawn.lua")
+
 AddCSLuaFile("cl_init.lua")
+AddCSLuaFile("cl_menus.lua")
 AddCSLuaFile("shared.lua")
 AddCSLuaFile("cl_hud.lua")
 AddCSLuaFile("cl_nametags.lua")
 AddCSLuaFile("cl_scoreboard.lua")
+AddCSLuaFile("cl_propertycard.lua")
 AddCSLuaFile("money.lua")
 AddCSLuaFile("cl_properties.lua")
-
---AddCSLuaFile("team.lua")
 AddCSLuaFile("sh_boards.lua")
 AddCSLuaFile("sh_board_gb.lua")
---AddCSLuaFile("spawn.lua")
---AddCSLuaFile("community.lua")
---AddCSLuaFile("chance.lua")
---AddCSLuaFile("turn.lua")
+
 
 MONEY_STARTAMOUNT = 1500 --Can be changed to your starting amount
 
@@ -60,14 +59,6 @@ function GM:SpawnMenuEnabled()
 end
 
 function SpawnBoardPieces()
-
-	--for k,v in ipairs( ents.GetAll() ) do
-		--for i = -1,39 do 	
-		--	if string.lower( v:GetName() ) == property[i].name then
-	--			property[i].entity = v
-	--		end
-	--	end  
-	--end
 	
 	local start_x_pos = -680
 	--These are the initial places on the board on the GO sign when the gamemode starts up

@@ -1,5 +1,5 @@
-local meta = FindMetaTable("Player") --Get the meta table of player
- 
+ local meta = FindMetaTable("Player")
+
 function meta:AddMoney(amount)
 	local current_cash = self:GetMoney()
 	self:SetMoney( current_cash + amount )

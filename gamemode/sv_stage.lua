@@ -25,3 +25,15 @@ Stage = {
 	COMPLETE = 255
 	--END TURN
 }
+
+function Stage:toString(stage)
+
+	for k,v in pairs(Stage)do
+		if v == stage then
+			return k
+		end
+	end
+
+	return "ERROR STAGE NOT FOUND"
+
+end

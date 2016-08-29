@@ -1,18 +1,7 @@
 
-for k,v in ipairs( ents.GetAll() ) do
-	for i = -1,39 do 	
-		if string.lower( v:GetClass() ) ==  string.Replace(Boards["GB"].properties[i].name, " ", "_") then
-			Boards["GB"].properties[i].entity = v
-		end
-	end  
-end
-
 for k,v in pairs(ents.FindByClass( "class C_BaseFlex" ))do
-
 	v:Remove()
-
 end
-
 
 
 local cube = ClientsideModel("models/hunter/blocks/cube05x05x05.mdl", 
