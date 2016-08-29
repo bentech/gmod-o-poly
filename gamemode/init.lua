@@ -8,6 +8,10 @@ include("community.lua")
 include("chance.lua")
 include("turn.lua")
 
+include("sv_stage.lua")
+include("sv_activegame.lua")
+include("sv_gamemanager.lua")
+
 include("sh_boards.lua")
 include("sh_board_gb.lua")
 
@@ -57,13 +61,13 @@ end
 
 function SpawnBoardPieces()
 
-	for k,v in ipairs( ents.GetAll() ) do
-		for i = -1,39 do 	
-			if string.lower( v:GetName() ) == property[i].name then
-				property[i].entity = v
-			end
-		end  
-	end
+	--for k,v in ipairs( ents.GetAll() ) do
+		--for i = -1,39 do 	
+		--	if string.lower( v:GetName() ) == property[i].name then
+	--			property[i].entity = v
+	--		end
+	--	end  
+	--end
 	
 	local start_x_pos = -680
 	--These are the initial places on the board on the GO sign when the gamemode starts up

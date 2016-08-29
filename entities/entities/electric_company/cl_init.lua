@@ -39,11 +39,11 @@ function ENT:Draw()
 	draw.RoundedBox(0, 452, 660, 345, 5, Color(0,0,0,255))
 			
 	--Text
-	draw.DrawText("  Electric Company", "HostFont", 470, 295, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+	draw.DrawText("Electric Company", "HostFont", 470, 295, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 	draw.DrawText("Rent", "PlayerFont", 465, 360, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
-	draw.DrawText("              4x Dice Roll", "PlayerFont", 465, 390, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+	draw.DrawText("4x Dice Roll", "PlayerFont", 465, 390, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 	draw.DrawText("If 2 are owned", "PlayerFont", 465, 420, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
-	draw.DrawText("             10x Dice Roll", "PlayerFont", 465, 450, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+	draw.DrawText("10x Dice Roll", "PlayerFont", 465, 450, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 	draw.DrawText("Mortage Value	   75", "PlayerFont", 465, 595, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 
 	cam.End3D2D()

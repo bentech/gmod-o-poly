@@ -13,7 +13,6 @@ BoardClass.code = ""
 BoardClass.spawnLocation = Vector()
 BoardClass.boardLocation = Vector()
 BoardClass.properties = {}
-BoardClass.properties = {}
 
 function Board( code, name, spawnLocation, boardLocation, properties )
 
